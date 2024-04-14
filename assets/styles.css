@@ -1,7 +1,13 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 50%;
+  width: 80%;
   margin: auto;
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    width: 50%;
+  }
 }
 
 .page-details {
@@ -28,11 +34,18 @@ body {
 /* Weather Card*/
 .weather-card {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 800px) {
+  .weather-card {
+    flex-direction: row;
+  }
 }
 
 .weather-card__location {
-  font-size: 1.2rem;
   text-transform: capitalize;
   margin-bottom: 1rem;
 }

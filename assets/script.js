@@ -6,6 +6,9 @@ const city = document.querySelector(".weather-card__city");
 const state = document.querySelector(".weather-card__state");
 const temperature = document.querySelector(".weather-card__temperature");
 const description = document.querySelector(".weather-card__description");
+const feelsLike = document.querySelector(".weather-card__feels-like");
+const pressure = document.querySelector(".weather-card__pressure");
+const humidity = document.querySelector(".weather-card__humidity");
 
 const apiKey = "ce00ef44568239e9f3d5333568586eb5";
 
@@ -50,12 +53,15 @@ locationForm.addEventListener("submit", async (e) => {
   try {
     //   Destructures relevant weather info from the response
     const {
-      main: { temp },
+      main,
       weather: [{ description: conditions }],
     } = await getWeatherData(locationSearch.value);
 
     //   Updates content on screen with the recived weather data
-    temperature.textContent = `${Math.round(temp)}°C`;
-    description.textContent = conditions;
+    temperature.textContent = `${Math.round(main.temp)}°C`;
+    description.textContent = main.conditions;
+    feelsLike.textContent = `${Math.round(main.feels_like)}°C`;
+    pressure.textContent = `${main.pressure} hPa`;
+    humidity.textContent = `${main.humidity}%`;
   } catch (err) {}
 });
