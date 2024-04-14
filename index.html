@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script href="./assets/script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-details">
+      <h1 class="page__title">Weather App</h1>
+      <p class="page__subtitle">
+        Enter city to get current weather information
+      </p>
+    </div>
+
+    <form action="" id="location-form" class="card">
+      <label for="location-form__search">Search city</label>
+      <input type="search" name="q" id="location-form__search" />
+      <button>Search</button>
+    </form>
+
+    <div class="card weather-card">
+      <div>
+        <p>
+          <span class="weather-card__city">Barrie</span
+          ><span class="weather-card__country">, Canada</span>
+        </p>
+        <p class="weather-card__temperature">14°C</p>
+        <p class="weather-card__description">Severe Weather Warning</p>
+      </div>
+    </div>
+  </body>
+</html>

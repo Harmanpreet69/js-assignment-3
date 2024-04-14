@@ -1,0 +1,49 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+.page-details {
+  text-align: center;
+  margin: 3rem;
+}
+
+/* card */
+.card {
+  padding: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem;
+}
+
+/* Location Form */
+#location-form label {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Weather Card*/
+.weather-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-card__city,
+.weather-card__country {
+  font-size: 1.2rem;
+}
+
+.weather-card__temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.weather-card__description {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
