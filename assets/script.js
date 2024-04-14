@@ -59,7 +59,7 @@ locationForm.addEventListener("submit", async (e) => {
 
     //   Updates content on screen with the recived weather data
     temperature.textContent = `${Math.round(main.temp)}°C`;
-    description.textContent = main.conditions;
+    description.textContent = conditions;
     feelsLike.textContent = `${Math.round(main.feels_like)}°C`;
     pressure.textContent = `${main.pressure} hPa`;
     humidity.textContent = `${main.humidity}%`;
