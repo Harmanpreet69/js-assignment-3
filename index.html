@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./assets/styles.css" />
-    <script href="./assets/script.js" defer></script>
+    <script src="./assets/script.js" defer></script>
   </head>
   <body>
     <div class="page-details">
@@ -15,20 +15,23 @@
       </p>
     </div>
 
-    <form action="" id="location-form" class="card">
-      <label for="location-form__search">Search city</label>
-      <input type="search" name="q" id="location-form__search" />
-      <button>Search</button>
-    </form>
+    <div class="card">
+      <form action="" id="location-form">
+        <label for="location-form__search">Search city</label>
+        <input type="search" name="q" id="location-form__search" />
+        <button>Search</button>
+      </form>
+      <p class="location-error"></p>
+    </div>
 
     <div class="card weather-card">
       <div>
-        <p>
-          <span class="weather-card__city">Barrie</span
-          ><span class="weather-card__country">, Canada</span>
+        <p class="weather-card__location">
+          <span class="weather-card__city">king's Landing</span>,
+          <span class="weather-card__state">Westeros</span>
         </p>
-        <p class="weather-card__temperature">14°C</p>
-        <p class="weather-card__description">Severe Weather Warning</p>
+        <p class="weather-card__temperature">45°C</p>
+        <p class="weather-card__description">Smells like shit</p>
       </div>
     </div>
   </body>

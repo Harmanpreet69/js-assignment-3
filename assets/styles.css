@@ -31,9 +31,10 @@ body {
   justify-content: space-between;
 }
 
-.weather-card__city,
-.weather-card__country {
+.weather-card__location {
   font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 
 .weather-card__temperature {
@@ -46,4 +47,5 @@ body {
 .weather-card__description {
   font-size: 1.4rem;
   font-weight: bold;
+  text-transform: capitalize;
 }
