@@ -14,7 +14,7 @@ const apiKey = "ce00ef44568239e9f3d5333568586eb5";
 
 // Returns longitudes and latitudes of a city
 async function locationToCoordinates(queryCity) {
-  const url = `http://api.openweathermap.org/geo/1.0/direct?q=${queryCity}&limit=1&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/geo/1.0/direct?q=${queryCity}&limit=1&appid=${apiKey}`;
 
   try {
     const res = await fetch(url);
